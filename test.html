@@ -100,113 +100,1212 @@
     ></script>
   </head>
   <body>
-    <div id="root" class="container">
-      <div class="row">
-        <div class="col-12">
-          <div id="questions"></div>
-          <div class="mt-3"></div>
-          <div id="result"></div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <!-- <div> -->
+        <img
+          src="/images/logo_pish_novsu_green_icon.png"
+          alt=""
+          style="height: 20px"
+        />
+        <!-- </div> -->
+        <div class="mr-1"></div>
+        PISH STARTUP CALCULATOR</a
+      >
+    </nav>
+    <main role="main" class="container">
+      <div class="mt-3"></div>
+      <h1>PISH STARTUP CALCULATOR</h1>
+
+      <h2>The Questions</h2>
+      <form class="form">
+        <div class="card">
+          <div class="card-body bg-light">
+            <p>Who is the CEO?</p>
+
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="ceo"
+                id="ceo-1"
+                value="1"
+                onchange="compute();"
+              />
+              <label class="form-check-label" id="ceo-label-1" for="ceo-1"
+                >Founder A</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="ceo"
+                id="ceo-2"
+                value="2"
+                onchange="compute();"
+              />
+              <label class="form-check-label" id="ceo-label-2" for="ceo-2"
+                >Founder B</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="ceo"
+                id="ceo-3"
+                value="3"
+                onchange="compute();"
+              />
+              <label class="form-check-label" id="ceo-label-3" for="ceo-3"
+                >Founder C</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="ceo"
+                id="ceo-4"
+                value="4"
+                onchange="compute();"
+              />
+              <label class="form-check-label" id="ceo-label-4" for="ceo-4"
+                >Founder D</label
+              >
+            </div>
+          </div>
         </div>
         <div class="mt-3"></div>
-        <div id="responsibility" class="col-12 row">
-          <div class="col-6">
-            <div class="card">
-              <div class="card-body bg-light">
-                <h3 class="text-center">Мы возьмем это на себя</h3>
-                <div class="mt-1"></div>
-                <div id="we-take"></div>
-              </div>
+        <div class="card">
+          <div class="card-body bg-light">
+            <p>Which founders are coding most of the site/app?</p>
+
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="dev"
+                id="dev-1"
+                value="1"
+                onchange="compute();"
+              />
+              <label class="form-check-label" id="dev-label-1" for="dev-1"
+                >Founder A</label
+              >
             </div>
-          </div>
-          <div class="col-6">
-            <div class="card">
-              <div class="card-body bg-light">
-                <h3 class="text-center">Это сможете делать Вы</h3>
-                <div class="mt-1"></div>
-                <div id="this-your"></div>
-              </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="dev"
+                id="dev-2"
+                value="2"
+                onchange="compute();"
+              />
+              <label class="form-check-label" id="dev-label-2" for="dev-2"
+                >Founder B</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="dev"
+                id="dev-3"
+                value="3"
+                onchange="compute();"
+              />
+              <label class="form-check-label" id="dev-label-3" for="dev-3"
+                >Founder C</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="dev"
+                id="dev-4"
+                value="4"
+                onchange="compute();"
+              />
+              <label class="form-check-label" id="dev-label-4" for="dev-4"
+                >Founder D</label
+              >
             </div>
           </div>
         </div>
-      </div>
-    </div>
+        <div class="mt-3"></div>
+        <div class="card">
+          <div class="card-body bg-light">
+            <p>Who had the original idea and told the others?</p>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="idea"
+                id="idea-1"
+                value="1"
+                onchange="compute();"
+              />
+              <label class="form-check-label" id="idea-label-1" for="idea-1"
+                >Founder A</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="idea"
+                id="idea-2"
+                value="2"
+                onchange="compute();"
+              />
+              <label class="form-check-label" id="idea-label-2" for="idea-2"
+                >Founder B</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="idea"
+                id="idea-3"
+                value="3"
+                onchange="compute();"
+              />
+              <label class="form-check-label" id="idea-label-3" for="idea-3"
+                >Founder C</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="idea"
+                id="idea-4"
+                value="4"
+                onchange="compute();"
+              />
+              <label class="form-check-label" id="idea-label-4" for="idea-4"
+                >Founder D</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="mt-3"></div>
+        <div class="card">
+          <div class="card-body bg-light">
+            <p>
+              If you could magically hire a few developers, would one of the
+              founders become their manager, and if so, who?
+            </p>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="rdmanager"
+                id="rdmanager-1"
+                value="1"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="rdmanager-label-1"
+                for="rdmanager-1"
+                >Founder A</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="rdmanager"
+                id="rdmanager-2"
+                value="2"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="rdmanager-label-2"
+                for="rdmanager-2"
+                >Founder B</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="rdmanager"
+                id="rdmanager-3"
+                value="3"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="rdmanager-label-3"
+                for="rdmanager-3"
+                >Founder C</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="rdmanager"
+                id="rdmanager-4"
+                value="4"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="rdmanager-label-4"
+                for="rdmanager-4"
+                >Founder D</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="mt-3"></div>
+        <div class="card">
+          <div class="card-body bg-light">
+            <p>
+              Which founders are working part-time and will join full-time once
+              you get funding
+            </p>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="parttime"
+                id="parttime-1"
+                value="1"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="parttime-label-1"
+                for="parttime-1"
+                >Founder A</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="parttime"
+                id="parttime-2"
+                value="2"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="parttime-label-2"
+                for="parttime-2"
+                >Founder B</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="parttime"
+                id="parttime-3"
+                value="3"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="parttime-label-3"
+                for="parttime-3"
+                >Founder C</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="parttime"
+                id="parttime-4"
+                value="4"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="parttime-label-4"
+                for="parttime-4"
+                >Founder D</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="mt-3"></div>
+        <div class="card">
+          <div class="card-body bg-light">
+            <p>
+              If this founder left, it would severely impact your chances of
+              raising funding
+            </p>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="leavefunding"
+                id="leavefunding-1"
+                value="1"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="leavefunding-label-1"
+                for="leavefunding-1"
+                >Founder A</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="leavefunding"
+                id="leavefunding-2"
+                value="2"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="leavefunding-label-2"
+                for="leavefunding-2"
+                >Founder B</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="leavefunding"
+                id="leavefunding-3"
+                value="3"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="leavefunding-label-3"
+                for="leavefunding-3"
+                >Founder C</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="leavefunding"
+                id="leavefunding-4"
+                value="4"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="leavefunding-label-4"
+                for="leavefunding-4"
+                >Founder D</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="mt-3"></div>
+        <div class="card">
+          <div class="card-body bg-light">
+            <p>
+              If this founder left, your development schedule would be severely
+              impacted
+            </p>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="leavedev"
+                id="leavedev-1"
+                value="1"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="leavedev-label-1"
+                for="leavedev-1"
+                >Founder A</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="leavedev"
+                id="leavedev-2"
+                value="2"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="leavedev-label-2"
+                for="leavedev-2"
+                >Founder B</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="leavedev"
+                id="leavedev-3"
+                value="3"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="leavedev-label-3"
+                for="leavedev-3"
+                >Founder C</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="leavedev"
+                id="leavedev-4"
+                value="4"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="leavedev-label-4"
+                for="leavedev-4"
+                >Founder D</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="mt-3"></div>
+        <div class="card">
+          <div class="card-body bg-light">
+            <p>
+              If this founder left, it would compromise your launch or initial
+              traction
+            </p>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="launch"
+                id="launch-1"
+                value="1"
+                onchange="compute();"
+              />
+              <label class="form-check-label" id="launch-label-1" for="launch-1"
+                >Founder A</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="launch"
+                id="launch-2"
+                value="2"
+                onchange="compute();"
+              />
+              <label class="form-check-label" id="launch-label-2" for="launch-2"
+                >Founder B</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="launch"
+                id="launch-3"
+                value="3"
+                onchange="compute();"
+              />
+              <label class="form-check-label" id="launch-label-3" for="launch-3"
+                >Founder C</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="launch"
+                id="launch-4"
+                value="4"
+                onchange="compute();"
+              />
+              <label class="form-check-label" id="launch-label-4" for="launch-4"
+                >Founder D</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="mt-3"></div>
+        <div class="card">
+          <div class="card-body bg-light">
+            <p>
+              If this founder left, it would probably prevent us from generating
+              revenue quickly
+            </p>
 
-    <script>
-      $root = $("#root");
-      $questions = $("#questions");
-      $result = $("#result");
-      $responsibility = $("#responsibility");
-      $weTake = $("#we-take");
-      $thisYour = $("#this-your");
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="revenue"
+                id="revenue-1"
+                value="1"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="revenue-label-1"
+                for="revenue-1"
+                >Founder A</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="revenue"
+                id="revenue-2"
+                value="2"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="revenue-label-2"
+                for="revenue-2"
+                >Founder B</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="revenue"
+                id="revenue-3"
+                value="3"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="revenue-label-3"
+                for="revenue-3"
+                >Founder C</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="revenue"
+                id="revenue-4"
+                value="4"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="revenue-label-4"
+                for="revenue-4"
+                >Founder D</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="mt-3"></div>
+        <div class="card">
+          <div class="card-body bg-light">
+            <p>
+              Who writes the blog and the marketing copy that goes on the site?
+            </p>
 
-      $responsibility.hide();
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="blog"
+                id="blog-1"
+                value="1"
+                onchange="compute();"
+              />
+              <label class="form-check-label" id="blog-label-1" for="blog-1"
+                >Founder A</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="blog"
+                id="blog-2"
+                value="2"
+                onchange="compute();"
+              />
+              <label class="form-check-label" id="blog-label-2" for="blog-2"
+                >Founder B</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="blog"
+                id="blog-3"
+                value="3"
+                onchange="compute();"
+              />
+              <label class="form-check-label" id="blog-label-3" for="blog-3"
+                >Founder C</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="blog"
+                id="blog-4"
+                value="4"
+                onchange="compute();"
+              />
+              <label class="form-check-label" id="blog-label-4" for="blog-4"
+                >Founder D</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="mt-3"></div>
+        <div class="card">
+          <div class="card-body bg-light">
+            <p>Who comes up with most of the features?</p>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="features"
+                id="features-1"
+                value="1"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="features-label-1"
+                for="features-1"
+                >Founder A</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="features"
+                id="features-2"
+                value="2"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="features-label-2"
+                for="features-2"
+                >Founder B</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="features"
+                id="features-3"
+                value="3"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="features-label-3"
+                for="features-3"
+                >Founder C</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="features"
+                id="features-4"
+                value="4"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="features-label-4"
+                for="features-4"
+                >Founder D</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="mt-3"></div>
+        <div class="card">
+          <div class="card-body bg-light">
+            <p>Who has a spreadsheet with budget estimates or simulations</p>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="budget"
+                id="budget-1"
+                value="1"
+                onchange="compute();"
+              />
+              <label class="form-check-label" id="budget-label-1" for="budget-1"
+                >Founder A</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="budget"
+                id="budget-2"
+                value="2"
+                onchange="compute();"
+              />
+              <label class="form-check-label" id="budget-label-2" for="budget-2"
+                >Founder B</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="budget"
+                id="budget-3"
+                value="3"
+                onchange="compute();"
+              />
+              <label class="form-check-label" id="budget-label-3" for="budget-3"
+                >Founder C</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="budget"
+                id="budget-4"
+                value="4"
+                onchange="compute();"
+              />
+              <label class="form-check-label" id="budget-label-4" for="budget-4"
+                >Founder D</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="mt-3"></div>
+        <div class="card">
+          <div class="card-body bg-light">
+            <p>
+              So far, who pays for basic business expenses like printing
+              business cards, web hosting?
+            </p>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="expenses"
+                id="expenses-1"
+                value="1"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="expenses-label-1"
+                for="expenses-1"
+                >Founder A</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="expenses"
+                id="expenses-2"
+                value="2"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="expenses-label-2"
+                for="expenses-2"
+                >Founder B</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="expenses"
+                id="expenses-3"
+                value="3"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="expenses-label-3"
+                for="expenses-3"
+                >Founder C</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="expenses"
+                id="expenses-4"
+                value="4"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="expenses-label-4"
+                for="expenses-4"
+                >Founder D</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="mt-3"></div>
+        <div class="card">
+          <div class="card-body bg-light">
+            <p>Who pitches investors?</p>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="vcpitch"
+                id="vcpitch-1"
+                value="1"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="vcpitch-label-1"
+                for="vcpitch-1"
+                >Founder A</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="vcpitch"
+                id="vcpitch-2"
+                value="2"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="vcpitch-label-2"
+                for="vcpitch-2"
+                >Founder B</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="vcpitch"
+                id="vcpitch-3"
+                value="3"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="vcpitch-label-3"
+                for="vcpitch-3"
+                >Founder C</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="vcpitch"
+                id="vcpitch-4"
+                value="4"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="vcpitch-label-4"
+                for="vcpitch-4"
+                >Founder D</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="mt-3"></div>
+        <div class="card">
+          <div class="card-body bg-light">
+            <p>
+              Who is well connected with your target industry, providing
+              introductions to potential customers, journalists and influencers?
+            </p>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="connections"
+                id="connections-1"
+                value="1"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="connections-label-1"
+                for="connections-1"
+                >Founder A</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="connections"
+                id="connections-2"
+                value="2"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="connections-label-2"
+                for="connections-2"
+                >Founder B</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="connections"
+                id="connections-3"
+                value="3"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="connections-label-3"
+                for="connections-3"
+                >Founder C</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="connections"
+                id="connections-4"
+                value="4"
+                onchange="compute();"
+              />
+              <label
+                class="form-check-label"
+                id="connections-label-4"
+                for="connections-4"
+                >Founder D</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="mt-3"></div>
 
-      const quizData = [
-        {
-          typeOfInput: "radio",
-          cardLabel: "CARD 1 LABEL",
-          cardName: "card1",
-          questions: [
-            {id: "input", label: "LABEL1", value: 1},
-            {id: "input", label: "LABEL2", value: 2},
-            {id: "input", label: "LABEL3", value: 3},
-            {id: "input", label: "LABEL4", value: 4},
-          ],
-        },
-        {
-          typeOfInput: "radio",
-          cardLabel: "CARD 2 LABEL",
-          cardName: "card2",
-          questions: [
-            {id: "input", label: "LABEL1", value: 1},
-            {id: "input", label: "LABEL2", value: 2},
-            {id: "input", label: "LABEL3", value: 3},
-            {id: "input", label: "LABEL4", value: 4},
-          ],
-        },
-      ];
+        <script>
+          sum = function (o) {
+            var s = 0;
+            for (i = 1; i < o.length; s += o[i++]);
+            return s;
+          };
 
-      quizData.forEach((card, cardIndex) => {
-        let inputArr = "";
-        card.questions.forEach(
-          (input, inputIndex) =>
-            (inputArr += `<div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="${
-              card.cardName
-            }" id="${
-              input.id + cardIndex + inputIndex
-            }" value="1" onchange="compute();"/><label class="form-check-label" id="ceo-label-1" for="${
-              input.id + cardIndex + inputIndex
-            }" >${input.label}</label></div>`)
-        );
+          function compute() {
+            var $ceos = new Array();
+            var $devs = new Array();
+            var $bizs = new Array();
 
-        $questions.append(
-          `<div class="card"><div class="card-body bg-light"><p>${card.cardLabel}</p>${inputArr}</div></div><div class="mt-3"></div>`
-        );
-      });
+            for ($founder = 1; $founder <= 4; $founder++) {
+              $ceo = 0;
+              $biz = 0;
+              $dev = 0;
+              $ratio = 1.0;
 
-      function compute() {
-        $result.html("");
-        $weTake.html("");
-        $thisYour.html("");
+              if ($("#ceo-" + $founder).is(":checked")) {
+                $ceo += 10;
+              }
+              if ($("#dev-" + $founder).is(":checked")) {
+                $dev += 10;
+              }
+              if ($("#idea-" + $founder).is(":checked")) {
+                $ceo += 5;
+                $dev += 3;
+                $biz += 3;
+              }
+              if ($("#rdmanager-" + $founder).is(":checked")) {
+                $ceo += 1;
+                $dev += 10;
+              }
+              if ($("#parttime-" + $founder).is(":checked")) {
+                $ratio = 1.3;
+              }
+              if ($("#leavefunding-" + $founder).is(":checked")) {
+                $ceo += 10;
+              }
+              if ($("#leavedev-" + $founder).is(":checked")) {
+                $ceo += 1;
+                $dev += 10;
+              }
+              if ($("#launch-" + $founder).is(":checked")) {
+                $ceo += 3;
+                $dev += 3;
+                $biz += 3;
+              }
+              if ($("#revenue-" + $founder).is(":checked")) {
+                $ceo += 2;
+                $biz += 10;
+              }
+              if ($("#blog-" + $founder).is(":checked")) {
+                $biz += 3;
+              }
+              if ($("#features-" + $founder).is(":checked")) {
+                $ceo += 5;
+                $dev += 2;
+                $biz += 2;
+              }
+              if ($("#budget-" + $founder).is(":checked")) {
+                $ceo += 3;
+                $biz += 5;
+              }
+              if ($("#expenses-" + $founder).is(":checked")) {
+                $ceo += 2;
+                $biz += 2;
+              }
+              if ($("#vcpitch-" + $founder).is(":checked")) {
+                $ceo += 10;
+                $biz += 1;
+              }
+              if ($("#connections-" + $founder).is(":checked")) {
+                $ceo += 3;
+                $biz += 10;
+              }
 
-        let result = 0;
-        quizData.forEach((card, cardIndex) => {
-          card.questions.forEach((question, questionIndex) => {
-            if (
-              $("#" + question.id + cardIndex + questionIndex).is(":checked")
-            ) {
-              result += question.value;
+              $ceos[$founder] = Math.max($ceo / $ratio, 0);
+              $bizs[$founder] = Math.max($biz / $ratio, 0);
+              $devs[$founder] = Math.max($dev / $ratio, 0);
             }
-          });
-        });
 
-        $result.append(
-          `<div class="alert alert-info text-center" role="alert"><h4 class="alert-heading">Мы хотим ${result}% вашей фирмы</h4></div>`
-        );
+            $errors = $("#errors");
+            $errors.html("");
 
-        $responsibility.show();
-        `<div class="card"><div class="card-body bg-light"></div></div><div class="mt-3"></div>`;
-      }
+            // Let's find the CEO
+
+            $theCeo = $("input[name=ceo]:radio:checked").val();
+            $totalCeo = sum($ceos);
+            $totalDev = sum($devs);
+            $totalBiz = sum($bizs);
+
+            //	$errors.append("<p class='message'>total ceo = " + $ceos[$ceo] + "/" + $totalCeo + ".</p>");
+            //	$errors.append("<p class='message'>total dev = " + $totalDev + ", total biz = " + $totalBiz + ".</p>");
+
+            if ($ceos[$theCeo] < 35)
+              $errors.append(
+                '<div class="alert alert-warning" role="alert">You appear to have a weak CEO.</div>'
+              );
+
+            if ($totalDev < 25)
+              $errors.append(
+                '<div class="alert alert-warning" role="alert">You probably should look for a CTO/Architect.</div>'
+              );
+
+            if ($totalBiz < 20)
+              $errors.append(
+                '<div class="alert alert-warning" role="alert">You may want to strengthen your business and marketing team.</div>'
+              );
+
+            for ($founder = 1; $founder <= 4; $founder++) {
+              if ($totalCeo > 0) $ceo = $ceos[$founder] / $totalCeo;
+              else $ceo = 0;
+
+              if ($totalBiz > 0) $biz = $bizs[$founder] / $totalBiz;
+              else $biz = 0;
+
+              if ($totalDev > 0) $dev = $devs[$founder] / $totalDev;
+              else $dev = 0;
+
+              $shares =
+                ($ceos[$founder] * 1.4 +
+                  $devs[$founder] * 1.2 +
+                  $bizs[$founder]) /
+                ($totalCeo * 1.4 + $totalBiz + $totalDev * 1.2);
+
+              $("#founder" + $founder).html(Math.round($shares * 100) + " %");
+
+              if ($ceos[$founder] > $ceos[$theCeo]) {
+                $name = $("#name" + $founder).val();
+                $errors.append(
+                  "<p class='message error'>Maybe " +
+                    $name +
+                    " should be CEO.</p>"
+                );
+              }
+            }
+          }
+
+          $("#equity").hide();
+          $("#feedback").hide();
+        </script>
+
+        <h2>Suggested Equity</h2>
+        <div class="card bg-info">
+          <table class="table" id="equity">
+            <thead>
+              <tr>
+                <th scope="col">Founder</th>
+                <th scope="col">Equity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="result1">A</td>
+                <td id="founder1" class="bigger">?</td>
+              </tr>
+              <tr>
+                <td id="result2">B</td>
+                <td id="founder2" class="bigger">?</td>
+              </tr>
+              <tr>
+                <td id="result3">C</td>
+                <td id="founder3" class="bigger">?</td>
+              </tr>
+              <tr>
+                <td id="result4">D</td>
+                <td id="founder4" class="bigger">?</td>
+              </tr>
+            </tbody>
+          </table>
+          <div id="errors"></div>
+        </div>
+        <div class="mt-3"></div>
+      </form>
+    </main>
+    <script>
+      const quizData = {};
     </script>
   </body>
 </html>
