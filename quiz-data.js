@@ -1,46 +1,88 @@
 const quizData = [
   {
     typeOfInput: "radio",
-    cardLabel: "CARD 1 LABEL",
-    cardName: "card1",
+    cardLabel: "На какой стадии технологическая готовность?",
     questions: [
-      {label: "LABEL1", value: 1},
-      {label: "LABEL2", value: 2},
-      {label: "LABEL3", value: 3},
-      {label: "LABEL4", value: 4},
-    ],
-  },
-  {
-    typeOfInput: "checkbox",
-    cardLabel: "CARD 2 LABEL",
-    cardName: "card2",
-    questions: [
-      {label: "LABEL1", value: 1},
-      {label: "LABEL2", value: 2},
-      {label: "LABEL3", value: 3},
-      {label: "LABEL4", value: 4},
-    ],
-  },
-  {
-    typeOfInput: "radio",
-    cardLabel: "CARD 3 LABEL",
-    cardName: "card3",
-    questions: [
-      {label: "LABEL1", value: 1},
-      {label: "LABEL2", value: 2},
-      {label: "LABEL3", value: 3},
-      {label: "LABEL4", value: 4},
+      {
+        label: "Нет образца",
+        value: 0,
+        responsibility: "Поможем получить первый образец",
+      },
+      {
+        label: "Макетный образец",
+        value: 1,
+        responsibility:
+          "Поможем довести образец до более высокой степени готовности",
+      },
+      {
+        label: "Лаборатоный образец",
+        value: 2,
+        responsibility:
+          "Поможем довести образец до более высокой степени готовности",
+      },
+      {
+        label: "Полнофункционнальный прототип",
+        value: 4,
+        responsibility: "Подготовка серийного образца",
+      },
+      {label: "Готовый серийный образец", value: 4, responsibility: ""},
     ],
   },
   {
     typeOfInput: "radio",
-    cardLabel: "CARD 4 LABEL",
-    cardName: "card4",
+    cardLabel: "Есть ли у вас кому делать конструкторскую документацию?",
     questions: [
-      {label: "LABEL1", value: 1},
-      {label: "LABEL2", value: 2},
-      {label: "LABEL3", value: 3},
-      {label: "LABEL4", value: 4},
+      {
+        label: "Да, мы сами это делаем",
+        value: 1,
+        responsibility: "Выпуск конструкторской документации",
+      },
+      {
+        label: "Нет",
+        value: 0,
+        responsibility: "Помощь с конструкторской документацией",
+      },
+    ],
+  },
+  {
+    typeOfInput: "radio",
+    cardLabel: "Производили ли вы испытания у заказчиков?",
+    questions: [
+      {
+        label: "Нет",
+        value: 0,
+        responsibility:
+          "Поможем с проведением испытаний у потенциальных заказчиков",
+      },
+      {
+        label: "Нет, но есть потенциальные договоренности",
+        value: 1,
+        responsibility:
+          "Поможем с проведением испытаний у потенциальных заказчиков",
+      },
+      {
+        label: "Нет, но есть гарантированная договоренность",
+        value: 2,
+        responsibility: "Проведение испытаний у заказчика",
+      },
+      {
+        label: "Да, проводили испытания",
+        value: 3,
+        responsibility: "",
+      },
+    ],
+  },
+  //КЛИЕНТЫ
+  {
+    typeOfInput: "radio",
+    cardLabel: "Есть ли сейчас у вас хотя бы один покупатель?",
+    questions: [
+      {label: "Да", value: 1, responsibility: "Увеличить количество продаж"},
+      {
+        label: "Нет",
+        value: 0,
+        responsibility: "Найдем потенциального покупателя",
+      },
     ],
   },
 ];
