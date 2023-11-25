@@ -195,7 +195,7 @@
 
       $responsibility.hide();
 
-      // ADD cARDS WITH INPUTS
+      // ADD СARDS WITH INPUTS
       quizData.forEach((card, cardIndex) => {
         let inputArr = "";
 
@@ -205,7 +205,7 @@
         );
 
         $questions.append(
-          `<div class="card"><div class="card-body bg-light"><p>${card.cardLabel}</p>${inputArr}</div></div><div class="mt-3"></div>`
+          `<div class="card"><div class="card-body bg-light d-flex flex-column"><p>${card.cardLabel}</p>${inputArr}</div></div><div class="mt-3"></div>`
         );
       });
 
