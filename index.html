@@ -181,7 +181,7 @@
     <div class="mt-5"></div>
     <footer class="bg-dark pb-1 pt-1 mt-auto">
       <a href="https://vk.com/pish.novsu"
-        ><p class="text-right m-0 mr-4">Сделано в ПИШ НовГУ 💚</p></a>
+        ><p class="text-center m-0 mr-4">Сделано в ПИШ НовГУ с 💚</p></a>
     </footer>
 
     <script>
@@ -252,13 +252,13 @@
             ) {
               result += question.value;
 
-              if (question.value > 0) {
+              if (question.weTake || question.value < 1) {
                 question.responsibility
-                  ? thisYourArr.push(question.responsibility)
+                  ? weTakeArr.push(question.responsibility)
                   : null;
               } else {
                 question.responsibility
-                  ? weTakeArr.push(question.responsibility)
+                  ? thisYourArr.push(question.responsibility)
                   : null;
               }
             }
